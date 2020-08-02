@@ -11,7 +11,10 @@ chmod +x EmBomber.py
 chmod +x EmBomber-updated.py
 chmod +x BomMaiL.py
 
-updated works with python3 use direct./EmBomber-updated.py
+updated works with python3 use direct
+python EmBomber-updated.py
+Or
+./EmBomber-updated.py
 
 for remaining scripts use
 
