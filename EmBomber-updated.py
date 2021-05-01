@@ -31,45 +31,25 @@ def bomb():
 	os.system('clear')
 
 	print(bcolors.OKGREEN + '''
-
 			 \|/
-
                        `--+--'
-
                           |
-
                       ,--'#`--.
-
                       |#######|
-
                    _.-'#######`-._
-
                 ,-'###############`-.
-
               ,'#####################`,         .___     .__         .
-
              |#########################|        [__ ._ _ [__) _ ._ _ |_  _ ._.
-
             |###########################|       [___[ | )[__)(_)[ | )[_)(/,[
-
            |#############################|
-
            |#############################|              Author: Dhagad Mintu 
-
            |#############################|
-
             |###########################|
-
              \#########################/
-
               `.#####################,'
-
                 `._###############_,'
-
                    `--..#####..--'                                 ,-.--.
-
 *.______________________________________________________________,' (Bomb)
-
                                                                     `--' ''' + bcolors.ENDC)
 
 
@@ -97,15 +77,10 @@ except IOError:
 #Input
 
 print((bcolors.WARNING + '''
-
 Choose a Mail Service:
-
 1) Gmail
-
 2) Yahoo
-
 3) Hotmail/Outlook
-
 ''' + bcolors.ENDC + '--------------------------------------------------------------'))
 
 try:
@@ -118,15 +93,13 @@ try:
 
 	to = input(bcolors.OKGREEN + 'To: ' + bcolors.ENDC)
 
-	subject = input(bcolors.OKGREEN + 'Subject (Optional): ' + bcolors.ENDC)
-
 	body = input(bcolors.OKGREEN + 'Message: ' + bcolors.ENDC)
 
 	nomes = eval(input(bcolors.OKGREEN + 'Number of Emails to send: ' + bcolors.ENDC))
 
 	no = 0
 
-	message = 'From: ' + user + '\nSubject: ' + subject + '\n' + body
+	message = 'From: ' + user + '\n' + body
 
 except KeyboardInterrupt:
 
@@ -157,9 +130,7 @@ if server == '1' or server == 'gmail' or server == 'Gmail':
 	except smtplib.SMTPAuthenticationError:
 
 		print(bcolors.FAIL + '''Your Username or Password is incorrect, please try again using the correct credentials
-
 		Or you need to enable less secure apps
-
 		On Gmail: https://myaccount.google.com/lesssecureapps ''' + bcolors.ENDC)
 
 		sys.exit()
@@ -207,11 +178,8 @@ elif server == '2' or server == 'Yahoo' or server == 'yahoo':
 	except smtplib.SMTPAuthenticationError:
 
 		print(bcolors.FAIL + '''Your Username or Password is incorrect, please try again using the correct credentials
-
 		Or you need to enable less secure apps
-
 		On Yahoo: https://login.yahoo.com/account/security?.scrumb=Tiby8TXUvJt#less-secure-apps
-
 		''' + bcolors.ENDC)
 
 		sys.exit()
@@ -301,4 +269,3 @@ else:
 	print('Works only with Gmail, Yahoo, Outlook and Hotmail.')
 
 	sys.exit()
-
