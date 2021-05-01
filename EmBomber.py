@@ -58,11 +58,10 @@ try:
 	user = raw_input(bcolors.OKGREEN + 'Your Email: ' + bcolors.ENDC)
 	pwd = getpass.getpass(bcolors.OKGREEN + 'Password: ' + bcolors.ENDC)
 	to = raw_input(bcolors.OKGREEN + 'To: ' + bcolors.ENDC)
-	subject = raw_input(bcolors.OKGREEN + 'Subject (Optional): ' + bcolors.ENDC)
 	body = raw_input(bcolors.OKGREEN + 'Message: ' + bcolors.ENDC)
 	nomes = input(bcolors.OKGREEN + 'Number of Emails to send: ' + bcolors.ENDC)
 	no = 0
-	message = 'From: ' + user + '\nSubject: ' + subject + '\n' + body
+	message = 'From: ' + user + '\n' + body
 except KeyboardInterrupt:
 	print bcolors.FAIL + '\nCanceled' + bcolors.ENDC
 	sys.exit()
